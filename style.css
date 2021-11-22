@@ -1,0 +1,228 @@
+            @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+            body {
+                background-image: url(./imagens/1212.jpg);
+                font-family: 'Barlow', sans-serif;
+                font-weight: bold;
+            }
+            
+            .header {
+                align-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 36px;
+            }
+            
+            main {
+                padding: 16px;
+            }
+            
+            main>* {
+                margin-bottom: 16px;
+            }
+            
+            .header__title {
+                color: #333333;
+                font-family: 'Kaushan Script', cursive;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            
+            .header__menu__a {
+                display: block;
+            }
+            
+            .header__menu__img {
+                width: 24px;
+            }
+            
+            .header__nav {
+                display: none;
+                font-family: 'Barlow', sans-serif;
+            }
+            
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .item>div>*:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            
+            .item>div {
+                padding: 16px;
+            }
+            
+            .item__figure {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: #ffff;
+            }
+            
+            .item__img {
+                width: 200px;
+            }
+            
+            .item__type {
+                background-color: #000000;
+                color: #fff;
+            }
+            
+            .item__title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #141414;
+            }
+            
+            .item__description {
+                font-size: 15px;
+                color: #1f1d1d;
+            }
+            
+            .item__price {
+                font-size: 17px;
+                color: #440233;
+                font-weight: 600;
+            }
+            
+            .item__add {
+                border: none;
+                background-color: transparent;
+                padding: 0;
+                font-size: 15px;
+                color: #b8860b;
+                text-decoration: underline;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+            
+            @media screen and (min-width: 700px) {
+                main {
+                    display: flex;
+                    margin-top: 90px;
+                }
+                main>* {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    justify-content: space-around;
+                    align-items: baseline;
+                    width: 30%;
+                }
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+                .header__title {
+                    font-size: 60px;
+                }
+                .header__list {
+                    display: flex;
+                }
+                .header__menu__item {
+                    margin: 0 5px;
+                }
+                .header__menu__item a {
+                    text-decoration: none;
+                    color: #333333;
+                }
+                .products {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 8px 15px 15px 0px;
+                    width: 60%;
+                    margin-left: 115px;
+                }
+                .item__img {
+                    width: 200px;
+                    height: 200px;
+                }
+                .item {
+                    width: 280px;
+                    height: 400px;
+                }
+                .header__nav {
+                    display: block;
+                    font-size: 21px;
+                    font-weight: bold;
+                }
+                .header__menu__a {
+                    display: none;
+                }
+                .pesquisa {
+                    display: flex;
+                }
+                .campoPesquisa {
+                    margin-bottom: 0px;
+                    height: 35px;
+                    font-size: 15px;
+                    border: 1px solid;
+                    border-color: #d3d3d3;
+                    border-radius: 3px;
+                }
+                .button {
+                    margin-bottom: 0px;
+                    height: 35px;
+                    font-size: 15px;
+                    border: 1px solid;
+                    border-color: #a9a9a9;
+                    margin-left: 3px;
+                    border-radius: 3px;
+                }
+                .cart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    height: 60px;
+                    width: 297px;
+                    border: 1px solid;
+                    border-color: #808080;
+                    background-color: #d3d3d3;
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 15px;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                }
+                .inCart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    height: 250px;
+                    width: 295px;
+                    border: 1px solid;
+                    border-color: #d3d3d3;
+                    text-align: center;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                .item__add {
+                    margin-top: 10px;
+                }
+                .header__menu__item:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                .item__title:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                .item__add:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                .item__type:hover {
+                    cursor: pointer;
+                }
+                .button {
+                    cursor: pointer;
+                }
+            }

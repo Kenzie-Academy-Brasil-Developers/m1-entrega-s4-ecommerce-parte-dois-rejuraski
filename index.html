@@ -21,99 +21,17 @@
         </a>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__menu__item"><a href="#">Todos</a></li>
-                <li class="header__menu__item"><a href="#">Acessórios</a></li>
-                <li class="header__menu__item"><a href="#">Calçados</a></li>
-                <li class="header__menu__item"><a href="#">Camisetas</a></li>
+                <li class="header__menu__item"><a href="#" onclick="chooseFilter()">Todos</a></li>
+                <li class="header__menu__item"><a href="#" onclick="chooseFilter('Acessorios')">Acessórios</a></li>
+                <li class="header__menu__item"><a href="#" onclick="chooseFilter('Calcados')">Calçados</a></li>
+                <li class="header__menu__item"><a href="#" onclick="chooseFilter('Camisetas')">Camisetas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="products">
-            <div class="item">
-                <figure class="item__figure">
-                    <img class="item__img" src="./imagens/lakers.jpeg" alt="Camiseta LA Lakers" />
-                    <figcaption>Camiseta número 6 - Lakers</figcaption>
-                </figure>
-                <div>
-                    <button class="item__type">Camisetas</button>
-                    <h2 class="item__title">Lebron James - 23 Lakers</h2>
-                    <p class="item__description">City Edition 2021 - Swingman </p>
-                    <p class="item__price">R$299,99</p>
-                    <button class="item__add">Adicionar ao carrinho</button>
-                </div>
-            </div>
+        <section id="principal" class="products">
 
-            <div class="item">
-                <figure class="item__figure">
-                    <img class="item__img" src="./imagens/Lebron18.jpg" alt="Tênis Lebron 18" />
-                    <figcaption>Tênis Nike Lebron James - 18</figcaption>
-                </figure>
-                <div>
-                    <button class="item__type">Calçados</button>
-                    <h2 class="item__title">Nike LeBron 18</h2>
-                    <p class="item__description">Wile E. vs Roadrunner</p>
-                    <p class="item__price">R$1.109,99</p>
-                    <button class="item__add">Adicionar ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <figure class="item__figure">
-                    <img class="item__img" src="./imagens/gsw.jpeg" alt="Camiseta Golden State" />
-                    <figcaption>Camiseta numero 30 - Golden State</figcaption>
-                </figure>
-                <div>
-                    <button class="item__type">Camisetas</button>
-                    <h2 class="item__title">Stephen Curry - 30 GSW </h2>
-                    <p class="item__description">"THE TOWN" - Swingman</p>
-                    <p class="item__price">R$299,99</p>
-                    <button class="item__add">Adicionar ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <figure class="item__figure">
-                    <img class="item__img" src="./imagens/tenis curry 7.jpg" alt="Tênis Stephen Curry" />
-                    <figcaption>Tênis Under Armour Curry 7</figcaption>
-                </figure>
-                <div>
-                    <button class="item__type">Calçados</button>
-                    <h2 class="item__title">Under Armour Curry 7</h2>
-                    <p class="item__description">Cinza e preto - Unissex</p>
-                    <p class="item__price">R$799,90</p>
-                    <button class="item__add">Adicionar ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <figure class="item__figure">
-                    <img class="item__img" src="./imagens/pack meia.jpg" alt="Meias NBA" />
-                    <figcaption>Trio Meia Nike</figcaption>
-                </figure>
-                <div>
-                    <button class="item__type">Acessórios</button>
-                    <h2 class="item__title">Meia Nike Cano Alto</h2>
-                    <p class="item__description">Elite Crew - Pack c/ 3</p>
-                    <p class="item__price">R$129,99</p>
-                    <button class="item__add">Adicionar ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <figure class="item__figure">
-                    <img class="item__img" src="./imagens/bola nba.jpg" alt="Bola de basquete" />
-                    <figcaption>Bola de basquete</figcaption>
-                </figure>
-                <div>
-                    <button class="item__type">Acessórios</button>
-                    <h2 class="item__title">Bola Wilson NBA</h2>
-                    <p class="item__description">Authentic Series Outdoor #7</p>
-                    <p class="item__price">R$209,99</p>
-                    <button class="item__add">Adicionar ao carrinho</button>
-                </div>
-            </div>
         </section>
         <aside class="information">
             <div class="pesquisa">
@@ -125,18 +43,24 @@
                 <header>
                     <h2 class="cart">Carrinho de compras</h2>
                 </header>
-                <div class="inCart">
-                    <h3>Carrinho vazio</h3>
-                    <p class="item__add">Adicionar itens</p>
+                <div class="inCart" id="cart__list">
+                </div>
+                <div class="cart__container">
+                    <div class="cart__quantity__container">
+                        <p class="cart__quantity__title">Quantidade</p>
+                        <p class="cart__quantity__value" id="quantity">0</p>
+                    </div>
+
+                    <div class="cart__total__container">
+                        <p class="cart__total__title">Total</p>
+                        <p class="cart__total__value" id="total">R$ 0.00</p>
+                    </div>
                 </div>
             </section>
         </aside>
 
     </main>
-
-
-
-    <script src="./assets/js/scrypt.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

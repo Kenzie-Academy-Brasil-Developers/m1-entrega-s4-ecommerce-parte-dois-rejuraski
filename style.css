@@ -184,7 +184,7 @@
                     width: 297px;
                     border: 1px solid;
                     border-color: #808080;
-                    background-color: #d3d3d3;
+                    background-color: #ffffff;
                     font-size: 20px;
                     text-align: center;
                     margin-top: 15px;
@@ -194,9 +194,9 @@
                 .inCart {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    align-items: center;
                     align-content: center;
-                    height: 250px;
+                    height: 462px;
                     width: 295px;
                     border: 1px solid;
                     border-color: #d3d3d3;
@@ -206,6 +206,59 @@
                 }
                 .item__add {
                     margin-top: 10px;
+                }
+                .cart__container {
+                    display: flex;
+                    flex-direction: column;
+                    height: 60px;
+                    width: 283px;
+                    background-color: #ffffff;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                .item-cart {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .cart__quantity__container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .cart__quantity__title {
+                    display: flex;
+                }
+                .cart__quantity__value {
+                    display: flex;
+                }
+                .cart__total__container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .cart__total__title {
+                    display: flex;
+                }
+                .cart__total__value {
+                    display: flex;
+                }
+                .item__container {
+                    padding: 16px;
+                }
+                .item-cart {
+                    display: flex;
+                }
+                .item__add {
+                    display: flex;
+                }
+                .item-cart__img {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 20px;
+                }
+                .item-cart__title {
+                    display: flex;
+                }
+                .item-cart__price {
+                    display: flex;
                 }
                 .header__menu__item:hover {
                     text-decoration: underline;
